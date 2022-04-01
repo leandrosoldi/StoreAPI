@@ -9,4 +9,5 @@ class FormaPagamento extends Model
 {
     use HasFactory;
     public $timestamps = false;
+    protected $table = 'formas_pagamento';
 }

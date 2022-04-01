@@ -12,6 +12,7 @@
         <table class="table table-striped">
             <thead>
                 <tr>
+                    <th class="text-center">ID</th>
                     <th class="text-center">Documento</th>
                     <th>Cliente</th>
                     <th>E-mail</th>
@@ -23,12 +24,13 @@
             <tbody>
                 @foreach ($clientes as $cli )
                     <tr>
+                        <td>{{ $cli->id}}</td>
                         <td class="cpf-cnpj text-center">{{ $cli->cpf_cnpj}}</td>
                         <td>{{ $cli->nome}}</td>
                         <td>{{ $cli->email}}</td>
                         <td class="text-center">{{ $cli->tipo_pessoa}}</td>
                         <td class="date text-center">{{ $cli->data_nasc}}</td>
-                        <td>{{ $cli->loja->nome}}</td>
+                        <td>{{ $cli->loja?->nome}}</td>
                     </tr>
                 @endforeach
             </tbody>
