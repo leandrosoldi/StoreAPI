@@ -231,6 +231,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
-    'api_key_pagcompleto' => env('APY_KEY_PAGCOMPLETO'),
+    'api_key_pagcompleto' => env('API_KEY_PAGCOMPLETO'),
 
 ];
